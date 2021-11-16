@@ -15,6 +15,17 @@
         "production": {}
       }
     },
+    "deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "docker-compose build",
+          "docker-compose push",
+          "terraform apply"
+        ],
+        "parallel": false
+      }
+    },
     "serve": {
       "executor": "@nrwl/next:server",
       "options": {

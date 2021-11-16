@@ -1,0 +1,2 @@
+project = "your-project-id"
+image = "gcr.io/your-image-name"

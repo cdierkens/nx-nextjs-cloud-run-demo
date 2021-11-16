@@ -1,0 +1,10 @@
+---
+version: '3.9'
+services:
+  web:
+    build: .
+    image: ${IMAGE_NAME}
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      - PORT=${PORT}
